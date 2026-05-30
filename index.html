@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meghan Bourgeois</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "-Trnv2qDy8CJGhv8u",
+      });
+   })();
+</script>
 </head>
 <body>
     <section id="landing-page">
@@ -64,6 +75,16 @@
                     </a>
                 </div>
             </div>
+            <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "-Trnv2qDy8CJGhv8u",
+      });
+   })();
+</script>
         </header>
         <button class="mail__btn click">
             <i class="fa-regular fa-envelope"></i>
@@ -111,7 +132,7 @@
                 <h4 class="modal__sub-title modal__title--contact">
                     I'm currently open to new opportunities.
                 </h4>
-                <form id="contact__form" action="">
+                <form id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
                         <input class="input" name="user_name" type="text" required></input>
@@ -129,7 +150,7 @@
                     </button>
                 </form>
                 <div class="modal__overlay modal__overlay--loading">
-                    <i class="fas fa-spinner"></i>
+                    <i class="fa-brands fa-spinner"></i>
                 </div>
                 <div class="modal__overlay modal__overlay--success">
                     Thanks for the message! Looking forward to speaking to you soon.

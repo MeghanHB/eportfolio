@@ -269,7 +269,7 @@ MODAL
     transform: translate(-50%, -50%);
     width: 90%;
     max-width: 1100px;
-    height: 400px;
+    height: 550px;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
     border-radius: 20px;
     overflow: hidden;
@@ -372,6 +372,7 @@ MODAL
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 }
 
 .modal__overlay--loading {
@@ -381,13 +382,16 @@ MODAL
 }
 
 .modal__overlay--success {
-    background-color: lightblue;
+    background-color: turquoise;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
     padding: 20px;
 }
 
+.modal__overlay--visible {
+    z-index: 1;
+}
 
 .fa-spinner {
     animation: spinner 750ms infinite linear;
