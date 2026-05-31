@@ -2,13 +2,19 @@
 // service_60nvk4l
 // -Trnv2qDy8CJGhv8u
 
+function toggleModal() {
+    document.body.classList.toggle("modal--open");
+        document.body.classList.toggle(".modal--open");
+
+}
+
 function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading')
 const success = document.querySelector('.modal__overlay--success')
-success.classList += " modal__overlay--visible"
+loading.classList += " modal__overlay--visible"
     emailjs
-        .sendForm(
+        .sendForm( 
             'service_60nvk4l',
             'template_x87ekvm',
             event.target,

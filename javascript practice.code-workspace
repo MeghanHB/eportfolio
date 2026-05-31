@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../javascript practice"
+		},
+		{
+			"path": "../Javascript crash course"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "eportfolio"
+	}
+}
