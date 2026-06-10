@@ -30,3 +30,12 @@ loading.classList += " modal__overlay--visible"
         })
 } 
 
+let isModalOpen = false;
+function ToggleModal() {
+    isModalOpen = !isModalOpen;
+    if (isModalOpen) {
+        return document.body.classList.remove("modal--open");
+    }
+ document.body.classList += " modal--open"
+}
+
