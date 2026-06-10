@@ -1,6 +1,6 @@
 // template_x87ekvm
 // service_60nvk4l
-// -Trnv2qDy8CJGhv8u
+// gpu7iywtk26Lw_n5G
 
 function toggleModal() {
     document.body.classList.toggle("modal--open");
@@ -18,7 +18,7 @@ loading.classList += " modal__overlay--visible"
             'service_60nvk4l',
             'template_x87ekvm',
             event.target,
-            '-Trnv2qDy8CJGhv8u'
+            'gpu7iywtk26Lw_n5G'
         ).then(() => {
             loading.classList.remove("modal__overlay--visible")
         success.classList += " modal__overlay--visible"
