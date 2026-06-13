@@ -19,13 +19,13 @@
 </script>
 </head>
 <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
                 <img id="personal-logo" src="assets/logo.svg" alt="">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -33,7 +33,7 @@
                     >About</a>
                 </li>
                  <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#projects" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black"
@@ -45,7 +45,7 @@
                     link__hover-effect
                     link__hover-effect--black"
                     >Contact</li></a>
-                     <li class="nav__link click">
+                     <li class="nav__link click" onclick="toggleContrast()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -61,7 +61,7 @@
                 <p class="header__para">
                     I'm a <b class="purple">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.
                     <br>
-                    Here's a bit more <b class="purple" onclick="toggleModal()">about me</b>.
+                    Here's a bit more <b class="purple" click onclick="toggleModal()">about me</b>.
                 </p>
                 <div class="social__list">
                     <a href="" class="social__link click">
@@ -76,9 +76,11 @@
                 </div>
             </div>
         </header>
+        <a href="#">
         <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-regular fa-envelope"></i>
         </button>
+        </a>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click">
 
@@ -149,6 +151,15 @@
                 </div>
             </div>
         </div>
+        <img src="./assets/semi circle.svg" class="shape shape--0">
+        <img src="./assets/circle.svg" class="shape shape--1">
+        <img src="./assets/squiggly.svg" class="shape shape--2">
+        <img src="./assets/circle.svg" class="shape shape--3">
+        <img src="./assets/triangle.svg" class="shape shape--4">
+        <img src="./assets/circle.svg" class="shape shape--5">
+        <img src="./assets/squiggly.svg" class="shape shape--6">
+        <img src="./assets/circle.svg" class="shape shape--7">
+        <img src="./assets/semi circle.svg" class="shape shape--8">
     </section>
     <section id="projects">
         <div class="container">
@@ -265,14 +276,14 @@
             <img class="footer__logo--img" src="./assets/logo.svg" alt="">
             </figure>
             <div class="footer__social--list">
-                <a href="#" class="
+                <a href="#" target="_blank" class=">
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
                 ">
                 Github
             </a>
-            <a href="#" class="
+            <a href="#" onclick="toggleModal()" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
@@ -286,7 +297,7 @@
                 ">
                 Contact
             </a>
-            <a href="#" class="
+            <a href="./assets/David Bragg Resume.pdf" target="_blank" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
